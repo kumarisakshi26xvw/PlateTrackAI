@@ -1,6 +1,6 @@
-🚘 PlateTrack-AI
+🚘 PlateTrack AI
 
-AI-Powered Vehicle Number Plate Recognition and Monitoring System
+An AI-Powered Vehicle Number Plate Recognition and Entry-Exit Monitoring System
 
 PlateTrack AI is an intelligent vehicle monitoring system that uses deep learning and computer vision to detect vehicles, recognize Indian vehicle registration plates, track vehicle movement, and automatically maintain entry and exit records with timestamps.
 
@@ -9,12 +9,12 @@ The system integrates YOLO11, ByteTrack, PaddleOCR, and OpenCV to provide automa
 ✨ Features
 
 - Number Plate Detection: Detects vehicle number plates using a custom-trained YOLO11 model.
-- Optical Character Recognition: Extracts registration numbers from detected plates using PaddleOCR.
-- Vehicle Tracking: Uses ByteTrack to maintain vehicle identities across video frames.
-- Entry/Exit Monitoring: Identifies vehicle entry and exit events based on movement across a predefined virtual line.
-- OCR Verification: Uses repeated recognition and confidence-based selection to improve plate-reading reliability.
-- Automatic Logging: Records recognized registration numbers, entry/exit status, and timestamps in a CSV file.
-- Video Processing: Processes video footage and generates an annotated output video.
+- Optical Character Recognition: Extracts registration numbers using PaddleOCR.
+- Vehicle Tracking: Uses ByteTrack to maintain tracking identities across video frames.
+- Entry/Exit Monitoring: Identifies vehicle entry and exit events using a predefined virtual line.
+- OCR Verification: Uses repeated recognition and confidence-based selection to improve recognition reliability.
+- Automatic Logging: Records registration numbers, entry/exit status, and timestamps in a CSV file.
+- Video Processing: Generates an annotated output video.
 
 🛠️ Technologies Used
 
@@ -39,11 +39,11 @@ CSV| Vehicle event logging
 
 📁 Project Structure
 
-PlateTrack-AI
+PlateTrack-AI/
 │
 ├── main.py              # Main vehicle detection pipeline
-├── img.py               # Extracts and saves manually selected plate images
-├── ocr_helper.py        # Number plate text recognition using PaddleOCR
+├── img.py               # Manual number plate image extraction
+├── ocr_helper.py        # Number plate text recognition
 ├── tracker_helper.py    # Vehicle tracking and CSV logging
 │
 ├── best.pt              # Trained YOLO11 model
@@ -57,24 +57,24 @@ PlateTrack-AI
 
 🚀 Installation and Setup
 
-1. Clone the repository
+1. Clone the Repository
 
-git clone https://github.com/kumarisakshi26xvw/PlateTrackAI.git
-cd PlateTrack-AI
+git clone https://github.com/kumarisakshi26xwv/PlateTrackAI.git
+cd PlateTrackAI
 
-2. Install dependencies
+2. Install Dependencies
 
 pip install ultralytics opencv-python paddleocr paddlepaddle
 
 Install any additional dependencies required by your environment.
 
-3. Configure the project
+3. Configure the Project
 
 - Place your trained YOLO11 weights ("best.pt") in the project directory.
 - Place the input video in the project directory.
 - Update the model and video paths in "main.py" if required.
 
-4. Run the application
+4. Run the Application
 
 python main.py
 
@@ -82,20 +82,14 @@ python main.py
 
 The system generates:
 
-- Detected Video: An annotated video showing detected number plates and tracking information.
-- Vehicle Log (CSV): A structured record containing:
-
-License Plate| Status| Timestamp
-KA02MN1826| IN| Recorded timestamp
-JH05AB1234| OUT| Recorded timestamp
-
-
+- Detected Video: An annotated video displaying detected number plates and tracking information.
+- Vehicle Log (CSV): A structured record of vehicle entry and exit events.
 
 👩‍💻 Project Information
 
-Project: PlateTrack AI
-Domain: Artificial Intelligence | Computer Vision | Deep Learning
-Application: Automated Vehicle Monitoring and Number Plate Recognition
+- Project Name: PlateTrack AI
+- Domain: Artificial Intelligence, Deep Learning and Computer Vision
+- Application: Automated Vehicle Monitoring and Number Plate Recognition
 
 ---
 
