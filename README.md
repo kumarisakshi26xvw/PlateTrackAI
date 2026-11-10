@@ -39,22 +39,19 @@ CSV| Vehicle event logging
 
 📁 Project Structure
 
-PlateTrack-AI/
-│
-├── main.py              # Main vehicle detection pipeline
-├── img.py               # Manual number plate image extraction
-├── ocr_helper.py        # Number plate text recognition
-├── tracker_helper.py    # Vehicle tracking and CSV logging
-│
-├── best.pt              # Trained YOLO11 model
-│
-├── detected_video.mp4   # Processed output video
-├── vehicle_log.csv      # Vehicle entry/exit records
-│
-├── plate_samples/       # Extracted number plate images
-│
-└── README.md
+The repository is organized as follows:
 
+- PlateTrack-AI/
+  - "main.py" – Main vehicle detection pipeline.
+  - "image.py" – Extracts and saves manually selected number plate images.
+  - "ocr_helper.py" – Number plate text recognition using PaddleOCR.
+  - "tracker_helper.py" – Vehicle tracking and CSV logging.
+  - "best.pt" – Trained YOLO11 model weights.
+  - "detected_video.mp4" – Processed output video.
+  - "vehicle_log.csv" – Vehicle entry/exit records.
+  - plate_samples/ – Stores extracted number plate images.
+  - "README.md" – Project documentation.
+  
 🚀 Installation and Setup
 
 1. Clone the Repository
