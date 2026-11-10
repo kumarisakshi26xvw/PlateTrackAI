@@ -1,4 +1,4 @@
-🚘 PlateTrack AI
+🚘 PlateTrack-AI
 
 AI-Powered Vehicle Number Plate Recognition and Monitoring System
 
@@ -59,7 +59,7 @@ PlateTrack-AI
 
 1. Clone the repository
 
-git clone 
+git clone https://github.com/kumarisakshi26xvw/PlateTrackAI.git
 cd PlateTrack-AI
 
 2. Install dependencies
