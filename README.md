@@ -43,7 +43,7 @@ The repository is organized as follows:
 
 - PlateTrack-AI/
   - "main.py" – Main vehicle detection pipeline.
-  - "image.py" – Extracts and saves manually selected number plate images.
+  - "img.py" – Extracts and saves manually selected number plate images.
   - "ocr_helper.py" – Number plate text recognition using PaddleOCR.
   - "tracker_helper.py" – Vehicle tracking and CSV logging.
   - "best.pt" – Trained YOLO11 model weights.
