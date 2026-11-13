@@ -18,7 +18,6 @@ The system integrates YOLO11, ByteTrack, PaddleOCR, and OpenCV to provide automa
 
 🛠️ Technologies Used
 
-Technology| Purpose
 Python - Core programming language|
 YOLO11 - Number plate detection|
 PaddleOCR - Text recognition|
